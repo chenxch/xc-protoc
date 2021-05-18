@@ -9,10 +9,10 @@ all_clients = []
 
 def HearBeatReq_bytes(name,msg):
     result = Message_pb2.MessageResponse()  # 注意括号不要掉了，
-    result.Name = name
-    result.Msg = msg
-    result.Code = 0
-    result.Time = time.strftime('%Y-%m-%d %H:%M:%S')
+    result.name = name
+    result.msg = msg
+    result.code = 0
+    result.time = time.strftime('%Y-%m-%d %H:%M:%S')
     return result.SerializeToString()
 
 class Myserver(socketserver.BaseRequestHandler):
@@ -35,8 +35,8 @@ def Thread_recv(socket_Server):
             code = msgReq.Code
             now_time = time.strftime('%Y-%m-%d %H:%M:%S')
             if code == 0:
-                name = msgReq.Name
-                msg = msgReq.Msg
+                name = msgReq.name
+                msg = msgReq.msg
                 print(now_time, ' name:', name, 'msg:', msg)
                 hearBeat_data = HearBeatReq_bytes(name,msg)
                 byte_data = hearBeat_data

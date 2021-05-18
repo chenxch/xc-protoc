@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\rMessage.proto\"9\n\x0eMessageRequest\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x0b\n\x03Msg\x18\x02 \x01(\t\x12\x0c\n\x04\x43ode\x18\x03 \x01(\x03\"H\n\x0fMessageResponse\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x0b\n\x03Msg\x18\x02 \x01(\t\x12\x0c\n\x04\x43ode\x18\x03 \x01(\x03\x12\x0c\n\x04Time\x18\x04 \x01(\tb\x06proto3')
+  serialized_pb=_b('\n\rMessage.proto\"9\n\x0eMessageRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0b\n\x03msg\x18\x02 \x01(\t\x12\x0c\n\x04\x63ode\x18\x03 \x01(\x03\"H\n\x0fMessageResponse\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0b\n\x03msg\x18\x02 \x01(\t\x12\x0c\n\x04\x63ode\x18\x03 \x01(\x03\x12\x0c\n\x04time\x18\x04 \x01(\tb\x06proto3')
 )
 
 
@@ -33,21 +33,21 @@ _MESSAGEREQUEST = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Name', full_name='MessageRequest.Name', index=0,
+      name='name', full_name='MessageRequest.name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='Msg', full_name='MessageRequest.Msg', index=1,
+      name='msg', full_name='MessageRequest.msg', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='Code', full_name='MessageRequest.Code', index=2,
+      name='code', full_name='MessageRequest.code', index=2,
       number=3, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -78,28 +78,28 @@ _MESSAGERESPONSE = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='Name', full_name='MessageResponse.Name', index=0,
+      name='name', full_name='MessageResponse.name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='Msg', full_name='MessageResponse.Msg', index=1,
+      name='msg', full_name='MessageResponse.msg', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='Code', full_name='MessageResponse.Code', index=2,
+      name='code', full_name='MessageResponse.code', index=2,
       number=3, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='Time', full_name='MessageResponse.Time', index=3,
+      name='time', full_name='MessageResponse.time', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,

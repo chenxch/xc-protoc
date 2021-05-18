@@ -13,10 +13,10 @@ Id = 0
 
 def HearBeatReq_bytes(name,msg):
     result = Message_pb2.MessageResponse()  # 注意括号不要掉了，
-    result.Name = name
-    result.Msg = msg
-    result.Code = 0
-    result.Time = time.strftime('%Y-%m-%d %H:%M:%S')
+    result.name = name
+    result.msg = msg
+    result.code = 0
+    result.time = time.strftime('%Y-%m-%d %H:%M:%S')
     return result.SerializeToString()
 
 
